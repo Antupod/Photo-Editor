@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Filter</title>
+</head>
+<body>
+    <div class="img-container">
+         <img src="https://picsum.photos/800/600" alt="picture" id="image" class="image">
+    </div>
+    <div class="filter-list">
+        <form action="#" id="form">
+            <ul class="container">
+                <!-- range -->
+                <li class="filter-element">
+                    <label class="filter-title">Blur</label>
+                    <input type="range" min="0" max="100" value="0">
+                </li>
+                <li class="filter-element">
+                    <label class="filter-title">Brightness</label>
+                    <input type="range" min="20" max="200" value="100">
+                </li>
+                <li class="filter-element">
+                    <label class="filter-title">Shade</label>
+                    <input type="range" min="0" max="200" value="0">
+                </li>
+                <li class="filter-element">
+                    <label class="filter-title">Saturation</label>
+                    <input type="range" min="20" max="200" value="100">
+                </li>
+                <li class="filter-element">
+                    <label class="filter-title">Contrast</label>
+                    <input type="range" min="20" max="200" value="100">
+                </li>
+                <!-- checkbox  -->
+                <li class="filter-element">
+                    <label class="filter-title">Negative</label>
+                    <input type="checkbox">
+                </li>
+                <li class="filter-element">
+                    <label class="filter-title">Morning mist</label>
+                    <input type="checkbox">
+                </li>
+                <li class="filter-element">
+                    <label class="filter-title">Night view</label>
+                    <input type="checkbox">
+                </li>
+            </ul>
+        </form>
+        <button id="reset" class="reset">Reset</button>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
